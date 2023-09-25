@@ -28,9 +28,13 @@ export interface IButtonStyle {
   bgColor?: string;  
   bgFocusColor?: string;
   fontFamily?: string;
+  focusFontFamily?: string;
   fontSize?: string;
+  focusFontSize?: string;
   fontWeight?: string;
+  focusFontWeight?: string;
   fontColor?: string;
+  focusFontColor?: string;
   textTransform?: string;
   textDecoration?: string;
   gap?: string;

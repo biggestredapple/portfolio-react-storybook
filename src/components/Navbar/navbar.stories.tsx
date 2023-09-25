@@ -105,6 +105,8 @@ Smart.args = {
   ],
   menuItemStyle: {
     bgColor: '#1e1',
-    fontColor: '#000'
+    bgFocusColor: '1e1',
+    fontColor: '#000',
+    focusFontWeight: '600'
   }
 }

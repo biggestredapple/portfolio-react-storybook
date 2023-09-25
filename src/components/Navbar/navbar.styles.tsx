@@ -72,12 +72,12 @@ export const ActionButton = styled(Link)<{
   menuItemStyle?: IButtonStyle
   focus: boolean
 }>`
-  background-color: ${props => !props.focus ? (props.menuItemStyle && !!props.menuItemStyle.bgColor ? props.menuItemStyle.bgColor : '#d4e7fe') : (props.menuItemStyle && !!props.menuItemStyle.bgFocusColor ? props.menuItemStyle.bgFocusColor : '#fff') };
+  background-color: ${props => !props.focus ? (!!props.menuItemStyle && !!props.menuItemStyle.bgColor ? props.menuItemStyle.bgColor : '#d4e7fe') : (!!props.menuItemStyle && !!props.menuItemStyle.bgFocusColor ? props.menuItemStyle.bgFocusColor : '#fff') };
   border: none;
-  font-family: ${props => !!props.menuItemStyle && !!props.menuItemStyle.fontFamily ? props.menuItemStyle.fontFamily : 'Montserrat,sans-serif' };
-  font-size: ${props => !!props.menuItemStyle && !!props.menuItemStyle.fontSize ? props.menuItemStyle.fontSize : '18px'};
-  font-weight: ${props => !!props.menuItemStyle && !!props.menuItemStyle.fontWeight ? props.menuItemStyle.fontWeight : '400'};
-  color: ${props => !!props.menuItemStyle && !!props.menuItemStyle.fontColor ? props.menuItemStyle.fontColor : '#222f5c'};
+  font-family: ${props => !props.focus ? (!!props.menuItemStyle && !!props.menuItemStyle.fontFamily ? props.menuItemStyle.fontFamily : 'Montserrat,sans-serif') : (!!props.menuItemStyle && !!props.menuItemStyle.focusFontFamily ? props.menuItemStyle.focusFontFamily : 'Montserrat,sans-serif') };
+  font-size: ${props => !props.focus ? (!!props.menuItemStyle && !!props.menuItemStyle.fontSize ? props.menuItemStyle.fontSize : '18px') : (!!props.menuItemStyle && !!props.menuItemStyle.focusFontSize ? props.menuItemStyle.focusFontSize : '18px')};
+  font-weight: ${props => !props.focus ? (!!props.menuItemStyle && !!props.menuItemStyle.fontWeight ? props.menuItemStyle.fontWeight : '400') : (!!props.menuItemStyle && !!props.menuItemStyle.focusFontWeight ? props.menuItemStyle.focusFontWeight : '400')};
+  color: ${props => !props.focus ? (!!props.menuItemStyle && !!props.menuItemStyle.fontColor ? props.menuItemStyle.fontColor : '#222f5c') : (!!props.menuItemStyle && !!props.menuItemStyle.focusFontWeight ? props.menuItemStyle.focusFontWeight : '#222f5c')};
   cursor: pointer;
   text-decoration: ${props => !!props.menuItemStyle && !!props.menuItemStyle.textDecoration ? props.menuItemStyle.textDecoration : 'none' };
   text-transform: ${props => !!props.menuItemStyle && !!props.menuItemStyle.textTransform ? props.menuItemStyle.textTransform : 'none' };
