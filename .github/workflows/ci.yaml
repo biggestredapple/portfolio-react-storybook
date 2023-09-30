@@ -1,11 +1,10 @@
 yaml
 name: 'Portfolio Storybook CI'
 on:
+  push:
   pull_request:
-    branches:
-      - main
 jobs:
-  build:
+  chromatic:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
