@@ -1,0 +1,20 @@
+yaml
+name: Animal Farm NodeJS CI
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+    - name: Run Npm 
+      run: npm install
+    - name: Deploy to Chromatic
+      run: npx chromatic --project-token=chpt_38593d26e40e887 --exit-zero-on-changes --exit-once-uploaded
