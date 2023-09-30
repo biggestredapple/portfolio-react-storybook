@@ -1,4 +1,4 @@
-name: Portfolio Storybook CI
+name: 'Portfolio Storybook CI'
 on:
   pull_request:
     branches:
