@@ -1,8 +1,7 @@
 name: 'Portfolio Storybook Ci'
 on:
-  push:
   pull_request:
-    branches: [ 'main' ]
+    branches: [ 'master' ]
 jobs:
   chromatic:
     runs-on: ubuntu-22.04
