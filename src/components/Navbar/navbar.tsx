@@ -28,7 +28,6 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = (props) => {
   const location = useLocation()
-  console.log(location)
 
   const { positionStyle, userInfo, bgColor, userInfoNameTextStyle, menuItemStyle, borderStyle, menuItems } = props;
 
