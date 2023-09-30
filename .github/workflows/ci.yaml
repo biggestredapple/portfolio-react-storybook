@@ -15,4 +15,4 @@ jobs:
     - name: 'Run Npm'
       run: npm install
     - name: 'Deploy to Chromatic'
-      run: npx chromatic --project-token=chpt_38593d26e40e887 --exit-zero-on-changes --exit-once-uploaded
+      run: npx chromatic --project-token=chpt_38593d26e40e887
