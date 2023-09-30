@@ -1,4 +1,3 @@
-yaml
 name: Portfolio Storybook CI
 on:
   pull_request:
