@@ -1,5 +1,5 @@
 yaml
-name: Animal Farm NodeJS CI
+name: Portfolio Storybook CI
 on:
   pull_request:
     branches:
