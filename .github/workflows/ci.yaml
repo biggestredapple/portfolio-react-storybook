@@ -5,6 +5,7 @@ on:
     branches: [ 'main' ]
 jobs:
   chromatic:
+    runs-on: ubuntu-22.04
     steps:
     - name: 'Checkout repository'
       uses: actions/checkout@v2
